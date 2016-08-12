@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>VASE@ECCV2016|Chunlei Peng@Xidian</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<!--theme-style-->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Chunlei,Peng,VIPSL,Xidian,face,sketch,synthesis,heterogeneous,recognition" />
+<meta name="description" content="Chunlei Peng is currently pursuing the Ph.D. degree in the VIPS laboratory, Xidian University, Xi’an, China. His current research interests include computer vision, pattern recognition, and machine learning.">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--fonts-->
+<link href='http://fonts.lug.ustc.edu.cn/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+<!--//fonts-->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+				<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+					</script>
+
+</head>
+<body>
+	<!--header-->
+<!-- 	<div class="container">
+	<div class="header">
+		<div class="header-top">
+			<div class="logo">
+				<a href="index.html"><img src="Images/MyLogo.png" style="width: 70%;padding-bottom:3%" alt="Chunlei Peng" ></a>
+			</div>
+			<div class="header-top-on">
+			</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="header-bottom">
+				<div class="top-nav">
+					<span class="menu"><img src="Images/menu.png" alt="Menu" >  </span>
+					<ul>
+						<li><a href="index.html"> HOME</a> </li>
+						<li><a href="CV/CV_Chunlei_Peng.pdf" target="_blank"> CV</a></li>
+						<li><a href="Publications.html"  style="color: #333333"> PUBLICATIONS</a></li>
+						<li><a href="Projects.html"> PROJECTS</a></li>
+						<li><a href="Contact.html"> CONTACT </a></li>
+					</ul>					
+				<script>
+					$("span.menu").click(function(){
+						$(".top-nav ul").slideToggle(500, function(){
+						});
+					});
+			</script>
+				</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	</div> -->
+
+			<div class="container">
+			<div class="content">
+				<div class="top-on">
+				<br><br>
+				<h4><font style=" font-weight:normal;line-height:1.6;text-align:justify">
+				<span style="float:right;">[<a href="index.html">Back to Home</a>]</span><br>
+				<center><i>VASE @ ECCV 2016</i></center>
+				</font></h4>
+				
+				<h1><font style=" font-weight:bold;line-height:1.6;text-align:justify">
+				<center>Face Recognition from Multiple Stylistic Sketches:<br>Scenarios, Datasets, and Evaluation</center>
+				</font></h1>			
+				<br>
+				<h4><font style="font-weight:normal;line-height:1.6;text-align:justify">
+				<center><a href="index.html"  target="_blank"><b>Chunlei Peng</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a  href="http://web.xidian.edu.cn/nnwang/index.html" target="_blank">Nannan Wang</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a  href="http://see.xidian.edu.cn/faculty/xbgao/" target="_blank">Xinbo Gao</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a  href="http://web.xidian.edu.cn/leejie/" target="_blank">Jie Li</a></center>
+				</font></h4>
+				<br>
+				<h3><font style=" font-weight:bold;line-height:1.6;text-align:justify">
+				<center>Xidian University</center>
+				</font></h3>
+				<br>
+				<center><a href="FRMSketches.html"><img class="img-responsive " src="Images/VASE2016_Figure1.png" width="100%" alt="TPAMI2016_GHFR"  /></a></center>
+				<h4 style="line-height:1.6;text-align:justify"><font style=" font-weight:normal">
+				<b>Fig. 1</b>. Illustrations of the proposed three scenarios of face recognition from multiple stylistic sketches. (a) <b>Scenario-MHS</b>: recognition from multiple hand-drawn sketches drawn by different artists; (b) <b>Scenario-MHCS</b>: recognition from a hand-drawn sketch and multiple composite sketches produced by different software tools; (c) <b>Scenario-MCS</b>: recognition from multiple composite sketches from different software tools.</h4>
+				
+				<br><br>
+				<h2>Abstract</h2><br>
+				<h4 style="line-height:1.6;text-align:justify"><font style=" font-weight:normal">
+				&nbsp;&nbsp;&nbsp;&nbsp;Matching a face sketch against mug shots, which plays an important role in law enforcement and security, is an interesting and challenging topic in face recognition community. Although great progress has been made in recent years, main focus is the face recognition based on SINGLE sketch in existing studies. In this paper, we present a fundamental study of face recognition from multiple stylistic sketches. Three specific scenarios with corresponding datasets are carefully introduced to mimic real-world situations: (1) recognition from multiple hand-drawn sketches; (2) recognition from hand-drawn sketch and composite sketches; (3) recognition from multiple composite sketches. We further provide the evaluation protocols and several benchmarks on these proposed scenarios. Finally, we discuss the plenty of challenges and possible future directions that worth to be further investigated. All the materials are publicly available for comparisons and further study of this problem.
+				</font></h4>
+				
+				<br><br>
+				<h2>Datasets</h2><br>
+				<h4><font style="font-weight:normal;line-height:1.6;text-align:justify">
+				<ul style="line-height:1.6;text-align:justify;padding-left: 3%"><font style=" font-weight:normal">
+				<li style="padding-bottom:1%">
+				VIPSL dataset [<a href="http://www.ihitworld.com/index.php/vipsl-database" target="_blank">Link</a>] [<a href="FRMSketches/VIPSL_Protocols.zip" target="_blank">Protocol</a>]
+				</li>
+				<li style="padding-bottom:1%">
+				AR photos [<a href="FRMSketches/AR_Challenging_filename.zip" target="_blank">Filenames</a>] [<a href="FRMSketches/AR_Protocols.zip" target="_blank">Protocol</a>]<br>
+				AR viewed sketches [<a href="http://mmlab.ie.cuhk.edu.hk/archive/facesketch.html" target="_blank">Link</a>], PRIP-VSGC composite sketches [<a href="http://biometrics.cse.msu.edu/pubs/databases.html" target="_blank">Link</a>], E-PRIP sketches [<a href="http://www.iab-rubric.org/resources/eprip.html" target="_blank">Link</a>]
+				</li>			
+				<li style="padding-bottom:1%">
+				Enlarged gallery [<a href="FRMSketches/Enlarged_Gallery_filename.zip" target="_blank">Filenames</a>]
+				</li>
+				</ul>
+				</h4>	
+
+				<br><br>
+				<h2>Experiments</h2><br>
+				<h4><font style="font-weight:normal;line-height:1.6;text-align:justify">
+				<ul style="line-height:1.6;text-align:justify;padding-left: 3%"><font style=" font-weight:normal">
+				<li style="padding-bottom:1%">
+				<b>Experiment in Scenario-MHS</b><br>
+				<center><a href="FRMSketches.html"><img class="img-responsive " src="Images/Experiment_in_MHS.png" width="100%" alt="Experiment_in_MHS"  /></a></center>
+				The mat files to draw the curves above can be downloaded <a href="FRMSketches/DrawMHSFigures.zip" target="_blank">here</a>.
+				</li>
+				<br>
+				<li style="padding-bottom:1%">
+				<b>Experiment in Scenario-MHCS</b><br>
+				<center><a href="FRMSketches.html"><img class="img-responsive " src="Images/Experiment_in_MHCS.png" width="100%" alt="Experiment_in_MHCS"  /></a></center>
+				The mat files to draw the curves above can be downloaded <a href="FRMSketches/DrawMHCSFigures.zip" target="_blank">here</a>.
+				</li>	
+				<br>
+				<li style="padding-bottom:1%">
+				<b>Experiment in Scenario-MCS</b><br>
+				<center><a href="FRMSketches.html"><img class="img-responsive " src="Images/Experiment_in_MCS.png" width="100%" alt="Experiment_in_MCS"  /></a></center>
+				The mat files to draw the curves above can be downloaded <a href="FRMSketches/DrawMCSFigures.zip" target="_blank">here</a>.
+				</li>	
+				
+				</ul>
+				</h4>			
+	
+				<br>
+				<h2>Citation</h2><br>
+				<h4>
+				<ul style="line-height:1.6;text-align:justify;padding-left: 3%"><font style=" font-weight:normal">
+				<li style="padding-bottom:1%">
+				C. Peng, N. Wang, X. Gao, and J. Li. <i>Face Recognition from Multiple Stylistic Sketches: Scenarios, Datasets, and Evaluation</i>. European Conference on Computer Vision workshop on Visual Analysis of Sketches, 2016.
+				</li>
+				</font>
+				</ul>
+				</h4>
+	
+	
+				<br><br>
+				</div>				
+			</div>
+		</div>
+
+		<div class="container">
+		<div class="footer">
+			<div class="footer-top">
+				<div class="col-md-4 amet-sed">
+				<h4>navigation</h4>
+				<i class="line"> </i>
+					<ul class="nav-bottom">
+						<li><a href="index.html" >HOME  </a> </li>
+						<li><a href="CV/CV_Chunlei_Peng.pdf"  target="_blank"> CV</a></li>
+						<li><a href="Publications.html"> PUBLICATIONS </a></li>
+						<li><a href="Projects.html" > PROJECTS</a></li>
+						<li><a href="Datasets.html"> DATASETS</a></li>
+						<li><a href="Contact.html">CONTACT </a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 amet-sed ">
+				<h4>Contact</h4>
+				<i class="line"> </i>
+				<p  style="text-transform:none;padding-top:2.5em">
+				Chunlei Peng<br>
+				Xidian University<br>
+				Xi'an, 710071, China<br>
+				Email: <a href="mailto:clp.xidian@gmail.com">clp.xidian(at)gmail.com</a><br>
+				Phone: (86)15829916976</p>
+				</div>
+				<div class="col-md-4 amet-sed ">
+				<h4>Links</h4>
+				<i class="line"> </i>
+				<p>
+				<a  href="http://see.xidian.edu.cn/faculty/xbgao/" target="_blank">Xinbo Gao</a><br>
+				<a  href="http://web.xidian.edu.cn/nnwang/index.html" target="_blank">Nannan Wang</a><br>
+				<a  href="http://see.xidian.edu.cn/vipsl/index.html" target="_blank">VIPS Lab</a><br>
+				<a  href="http://www.ihitworld.com/" target="_blank">HIT Lab</a><br>
+				</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+				<p class="footer-class" style="text-transform:none"> Hosted on <a  href="https://pages.github.com/" target="_blank">Github Pages</a> and <a  href="https://coding.net/help/doc/pages/index.html" target="_blank">Coding Pages</a>. Inspired template by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a>.</p>
+		<p class="footer-class"  style="text-transform:none">Copyright &copy; 2016 Chunlei Peng - Visited <a href="http://www.easycounter.com/" onclick="stc(this, 44)"><img src="http://www.easycounter.com/counter.php?lanseyong000" border="0" alt="Free Web Counters"></a> times - Last updated: May.4 2016.</p>
+		</div>
+		 <script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1200,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+</body>
+</html>
